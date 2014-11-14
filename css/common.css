@@ -1,0 +1,244 @@
+/* Reset (default browsers styles erasing) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } html, body { height: 100%; } body { background: #fff; line-height: 1; } :focus { outline: 0; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+
+.b-frames {
+
+	position: fixed;
+	z-index: 10;
+}
+	.b-frames .b-frames-separator-clause {
+
+		position: absolute;
+		display: block;
+		height: 7px;
+		background: #c8a359;
+	}
+
+	.b-frames .b-frames-upper-separator {
+
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		margin: 0 auto;
+	}
+
+		.b-frames-upper-separator .b-frames-upper-separator-left-clause {
+			display: block;
+			left: 0;
+			right: 50%;
+			margin: 0 38px 0 0;
+		}
+			.b-frames-upper-separator .b-frames-upper-separator-left-clause:after {
+
+				position: absolute;
+				content: "";
+				top: 0;
+				right: -9px;
+				width: 9px;
+				height: 7px;
+				background-image: url('../i/couple-triangle.png');
+				background-repeat: no-repeat;
+				background-position: 0 0;
+			}	
+		.b-frames-upper-separator .b-frames-upper-separator-right-clause {
+
+			display: block;
+			right: 0;
+			left: 50%;
+			margin: 0 0 0 38px;
+		}
+			.b-frames-upper-separator .b-frames-upper-separator-right-clause:after {
+
+				position: absolute;
+				content: "";
+				top: 0;
+				left: -9px;
+				width: 9px;
+				height: 7px;
+				background-image: url('../i/couple-triangle.png');
+				background-repeat: no-repeat;
+				background-position: 100% 0;
+			}
+
+		.b-frames-upper-separator-picture {
+
+			position: absolute;
+			top: -1px;
+			left: 50%;
+			margin: 0 0 0 -40px;
+			transition: .5s ease-in-out;
+			-moz-transition: .5s ease;
+			-webkit-transition: .5s ease;
+		}
+	.b-frames-right-separator {
+
+		position: fixed;
+		top: 20px;
+		bottom: 20px;
+		right: 20px;
+		width: 7px;
+		background: #c8a359;
+	}
+
+	.b-frames-bottom-separator {
+
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		margin: 0 auto;
+		height: 7px;
+		background: #c8a359;
+	}
+
+	.b-frames-left-separator {
+
+		width: 7px;
+		top: 20px;
+		bottom: 20px;
+		left: 20px;
+		position: fixed;
+		background: #c8a359;
+	}
+
+.l-header {
+
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+}
+	.l-header .l-menu-toggle-container {
+		position: absolute;
+		top: 57px;
+		left: 57px;
+		height: 30px;
+		width: 35px;
+		cursor: pointer;
+		z-index: 12;
+	}
+		.l-menu-toggle-container .b-menu-toggle-link {
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			width: 36px;
+			height: 28px;
+			background: url("../i/toggle.png") no-repeat 100% 0;
+			transition: .2s background-position linear;
+		}
+			.l-menu-toggle-container .b-menu-toggle-link:hover {
+				background-position: 0 0;
+			}
+	.l-header .b-primary-menu {
+
+		position: fixed;
+		display: none;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		font-size: 23px;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 9;
+		overflow: hidden;
+	}
+		.b-primary-menu .b-primary-menu-collection {
+
+			position: absolute;
+			top: 50%;
+			margin: 0 0 0 60px;
+			padding-top: 3px;
+			width: 30%;
+			min-width: 365px;
+			overflow: hidden;
+			list-style: none;
+			-webkit-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+			transition: 1s ease-in-out;
+			-moz-transition: 1s ease;
+			-webkit-transition: 1s ease;
+		}
+		.b-primary-menu .b-primary-menu-collection .b-primary-menu-clause {
+
+			position: relative;
+			margin: 22px 0;
+			padding-bottom: 1px;
+		}
+			.b-primary-menu .b-primary-menu-collection .b-primary-menu-clause:before {
+
+				position: absolute;
+				content: "";
+				display: block;
+				top: 50%;
+				left: -80px;
+				width: 0;
+				height: 1px;
+				background: #B6975F;
+				-webkit-transition: width 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+				-moz-transition: width 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+				-o-transition: width 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+				transition: width 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
+			}
+			.b-primary-menu .b-primary-menu-collection .b-primary-menu-clause:hover:before,
+			.b-primary-menu .b-primary-menu-collection .b-primary-menu-current-clause:before {
+
+				left: 0;
+				width: 31px;
+			}	
+			.b-primary-menu .b-primary-menu-collection .b-primary-menu-clause .b-primary-menu-clause-link {
+
+				padding-left: 70px;
+				color: #c8a359;
+				font-size: 21px;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+	.l-header .b-reservation-link {
+		position: fixed;
+		right: 63px;
+		top: 57px;
+		width: 34px;
+		height: 26px;
+		font-size: 0;
+		line-height: 0;
+	}
+		.l-header .b-reservation-link:after {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 36px;
+			height: 30px;
+			background: url('../i/reservation.png'); no-repeat 0 0;
+		}
+.l-content {
+
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	vertical-align: top;
+}
+	.l-content .b-paged-article {
+
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+		pointer-events: none;
+	}
+		.l-content .b-paged-article .b-featured-article {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			pointer-events: auto;
+		}
+			.l-content .b-paged-article .b-featured-article .b-featured-article-section {
+				
+			}
