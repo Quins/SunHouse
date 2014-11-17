@@ -6,52 +6,37 @@
 	<link rel="stylesheet" href="css/common.css">
 </head>
 <body>
-	<div class="b-frames">
-		
-		<div class="b-frames-upper-separator">
-		
-			<span class="b-frames-separator-clause b-frames-upper-separator-left-clause"></span>
-			<!-- Переделать лого: 
-
-				h1 Дом Солнца > pos:a 
-					before > img+logo
-					a > pos:r
-
-				Рамки перенести в хедер, и переименовать
-				frames -> b-borders-collaction
-					separator -> clause
-			 
-			 -->
-			<h1 class="b-frames-upper-separator-picture">
-				<a href="#" class="b-frames-upper-separator-picture-link"><img src="i/logo.png" alt="Дом солнца"></a>
-			</h1>
-			
-			<span class="b-frames-separator-clause b-frames-upper-separator-right-clause"></span>
-
-		</div>
-		
-		<div class="b-frames-right-separator"></div>
-		<div class="b-frames-bottom-separator"></div>
-		<div class="b-frames-left-separator"></div>
-		
-	</div>
 
 	<header class="l-header">
 
-		<div class="l-menu-toggle-container">
-			<a href="" class="b-menu-toggle-link">Показать меню</a>
-		</div>
+		<div class="b-borders-collection">
+			
+			<span class="b-borders-collection-clause b-borders-collection-upperleft-clause"></span>
+			<span class="b-borders-collection-clause b-borders-collection-upperright-clause"></span>
+			<span class="b-borders-collection-clause b-borders-collection-right-clause"></span>
+			<span class="b-borders-collection-clause b-borders-collection-bottom-clause"></span>
+			<span class="b-borders-collection-clause b-borders-collection-left-clause"></span>
 
-		<nav class="b-primary-menu"> <!-- menu -> navigation -->
-			<ul class="b-primary-collection"> 
-			<!-- collection -> navigatio -->
+		</div>
+				
+		<h1 class="b-logo">
+			<a href="index.html" class="b-logo-link" alt="Дом Солнца">Дом Солнца</a>
+			<p class="b-logo-subscription g-hidden">Дом Солнца</p>
+		</h1>
+
+
+		<nav class="b-primary-navigation">
+
+			<a href="#" alt="Показать меню" class="b-primary-navigation-toggle-link">Показать меню</a>
+
+			<ul class="b-primary-menu-collection">
 				
 				<li class="b-primary-menu-clause b-primary-menu-current-clause">
-					<a href="" class="b-primary-menu-clause-link">Добро пожаловать</a>
+					<a href="#" class="b-primary-menu-clause-link">Добро пожаловать</a>
 				</li>
 
 				<li class="b-primary-menu-clause">
-					<a href="" class="b-primary-menu-clause-link">Аппартаменты</a>
+					<a href="#" class="b-primary-menu-clause-link">Аппартаменты</a>
 				</li>
 
 				<li class="b-primary-menu-clause">
@@ -59,35 +44,126 @@
 				</li>
 
 				<li class="b-primary-menu-clause">
-					<a href="" class="b-primary-menu-clause-link">Партнеры</a>
+					<a href="#" class="b-primary-menu-clause-link">Партнеры</a>
 				</li>
 
 				<li class="b-primary-menu-clause">
-					<a href="" class="b-primary-menu-clause-link">Связаться с нами</a>
+					<a href="#" class="b-primary-menu-clause-link">Связаться с нами</a>
 				</li>
 
 			</ul>
+
+			<a href="#" class="b-primary-navigation-reservation-link">Забронировать</a>
+
+			<a href="#" class="b-primary-navigation-proceed-link  g-hidden">Скроллить вниз</a>
+
 		</nav>
 
-		<a href="#" class="b-reservation-link">Забронировать</a>
+		<ul class=" g-hidden b-contacts-collection">
+
+			<li class="b-contacts-clause"><a href="#" class="b-contacts-clause-link">Сочи, п.&nbsp;Красная Поляна, ул.&nbsp;Заповедная,  д.&nbsp;51</a>,</li>
+			<li class="b-contacts-clause"><a href="tel:+79689997999" class="b-contacts-clause-link">Телефон: +7&nbsp;(968)&nbsp;999-7-999</a></li>
+
+		</ul>
 
 	</header>
 	<div class="l-content">
 		<article class="b-paged-article" data-batch="true" data-batch-descriptor="main">
 
-			<section class="b-paged-article-section" data-batch-list="true" style="background-image: url(i/welcome.jpg);">
+			<section class="b-paged-article-section g-hidden" data-batch-list="true" style="background-image: url(i/welcome.jpg);">
 
-				<div class="b-featured-article-section">
-					<p class="b-featured-article-description">Дом Солнца</p>
+				<div class="b-paged-article-section-inside">	
+				
+					<div class="b-paged-article-section-contents">
 
-					<h1 class="b-featured-article-title">Уютный уголок роскоши в Красной Поляне</h1>
+						<h1 class="b-paged-article-primary-title">Уютный уголок роскоши в Красной Поляне</h1>
 
-					<a href="#" class="b-featured-article-navigation-link">Скроллить вниз</a>
-
-					<p class="b-featured-article-paragraph">Сочи, п. Красная Поляна, ул. Заповедная,  д. 51, Телефон: +7 (968) 999-7-999</p>
+					</div>
 				</div>
 
 			</section>
+
+			<section class="b-paged-article-section g-hidden" data-batch-list="true" style="background-image: url(i/appartments.jpg);">
+
+				<div class="b-paged-article-section-inside">	
+				
+					<div class="b-paged-article-section-contents">
+
+						<h2 class="b-paged-article-second-title">Апартаменты</h2>
+
+						<p class="g-hidden">Вы можете приезжать в Дом Солнца не только на уик-энд, но и жить здесь постоянно. Все апартаменты в четырехэтажном доме с мансардой. Вас ждут семь уютных и продуманных квартир разной площади и дизайна.</p>
+
+						<a href="#" class="g-hidden b-paged-article-link">Подробнее</a>
+
+					</div>
+				</div>
+
+			</section>
+
+			<section class="b-paged-article-section g-hidden" data-batch-list="true" style="background-image: url(i/placement.jpg);">
+
+				<div class="b-paged-article-section-inside">	
+				
+					<div class="b-paged-article-section-contents">
+
+						<h2 class="b-paged-article-second-title">Размещение</h2>
+
+						<p>Патио с барбекю для взрослых, закрытые и открытые парковки, специальные уличные кладовки рядом с гаражами, детский клуб, работающий по современным педагогическим методикам и многое другое.</p>
+
+						<a href="#" class="b-paged-article-link">Подробнее</a>
+
+					</div>
+				</div>
+
+			</section>
+
+			<section class="b-paged-article-section g-hidden" data-batch-list="true" style="background-image: url(i/contactus.jpg);">
+
+				<div class="b-paged-article-section-inside">	
+				
+					<div class="b-paged-article-section-contents">
+
+						<h2 class="b-paged-article-second-title">Связаться с нами</h2>
+
+						<form action="get" class="b-paged-article-section-form">
+							<div class="b-paged-article-section-form-field">
+								<input id="writeus-name" type="text" class="b-paged-article-section-form-field-entity" placeholder="Ваше имя">
+							</div>
+							<div class="b-paged-article-section-form-field">
+								<input id="writeus-email" type="email" class="b-paged-article-section-form-field-entity" placeholder="Телефон">
+							</div>
+
+							<button class="b-paged-article-section-form-button">Перезвоните мне</button>
+						</form>
+
+						<p>Сочи, п. Красная Поляна, ул. Заповедная, д. 51,</p>
+						<p>Телефон: +7 (968) 999-7-999</p>
+
+						<a href="#" class="b-paged-article-link">Посмотреть на карте</a>
+
+					</div>
+				</div>
+
+			</section>
+
+			<section class="b-paged-article-section" data-batch-list="true" style="background-image: url(i/partners.jpg);">
+
+				<div class="b-paged-article-section-inside">	
+				
+					<div class="b-paged-article-section-contents">
+
+						<h2 class="b-paged-article-second-title">Партнеры</h2>
+
+						<ul class="b-paged-article-section-partners-collection">
+							<li class="b-paged-article-section-partners-clause"><img src="i/partners/lavka.png" height="28" width="324" alt="Интерьерная лавка" class="b-paged-article-section-partners-picture"></li>
+							<li class="b-paged-article-section-partners-clause"><img src="i/partners/bork.png" height="28" width="147" alt="Bork" class="b-paged-article-section-partners-picture"></li>
+						</ul>
+
+					</div>
+				</div>
+
+			</section>
+
 
 		</article>
 
