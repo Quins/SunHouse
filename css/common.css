@@ -459,6 +459,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-link {
 
 					padding: 60px 3px 3px 3px;
+					display: inline-block;
 					font-family: 'PalatinoLinotype-Roman';
 					font-size: 20px;
 					line-height: 30px;
