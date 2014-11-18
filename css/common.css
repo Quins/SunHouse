@@ -22,20 +22,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 @font-face {
   font-family: 'PalatinoLinotype-Bold';
-  src: url('PalatinoLinotype-Bold.eot?#iefix') format('embedded-opentype'),
-  	   url('PalatinoLinotype-Bold.woff') format('woff'),
-  	   url('PalatinoLinotype-Bold.ttf')  format('truetype'),
-  	   url('PalatinoLinotype-Bold.svg#PalatinoLinotype-Bold') format('svg');
+  src: url('../fonts/PalatinoLinotype-Bold/PalatinoLinotype-Bold.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/PalatinoLinotype-Bold/PalatinoLinotype-Bold.woff') format('woff'),
+  	   url('../fonts/PalatinoLinotype-Bold/PalatinoLinotype-Bold.ttf')  format('truetype'),
+  	   url('../fonts/PalatinoLinotype-Bold/PalatinoLinotype-Bold.svg#PalatinoLinotype-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PalatinoLinotype-BoldItalic';
-  src: url('PalatinoLinotype-BoldItalic.eot?#iefix') format('embedded-opentype'),
-  	   url('PalatinoLinotype-BoldItalic.woff') format('woff'),
-  	   url('PalatinoLinotype-BoldItalic.ttf')  format('truetype'),
-  	   url('PalatinoLinotype-BoldItalic.svg#PalatinoLinotype-BoldItalic') format('svg');
+  src: url('../fonts/PalatinoLinotype-BoldItalic/PalatinoLinotype-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/PalatinoLinotype-BoldItalic/PalatinoLinotype-BoldItalic.woff') format('woff'),
+  	   url('../fonts/PalatinoLinotype-BoldItalic/PalatinoLinotype-BoldItalic.ttf')  format('truetype'),
+  	   url('../fonts/PalatinoLinotype-BoldItalic/PalatinoLinotype-BoldItalic.svg#PalatinoLinotype-BoldItalic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -445,7 +445,6 @@ a, a:hover {
 			.b-contacts-collection .b-contacts-clause .b-contacts-clause-link:hover {
 				text-decoration: underline;
 			}
-
 .l-content {
 
 	display: inline-block;
@@ -456,7 +455,6 @@ a, a:hover {
 	vertical-align: top;
 	background-size: cover;
 }
-
 .b-paged-article {
 
 	position: relative;
@@ -465,7 +463,6 @@ a, a:hover {
 	z-index: 1;
 	pointer-events: none;
 }
-
 	.b-paged-article .b-paged-article-section {
 
 		position: absolute;
@@ -538,6 +535,51 @@ a, a:hover {
 						width: 300px;
 						background-color: #c8a359;
 					}
+
+				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-section-contents-titles-section {
+
+					display: inline-block;
+					overflow: hidden;
+				}
+					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-section-contents-titles-section .b-paged-article-second-title:after,
+					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-section-contents-titles-section .b-paged-article-second-title:before {
+
+						left: 0;
+						margin: 0;
+						width: 100%;
+					}
+				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-third-title {
+
+					position: relative;
+					margin: 0 auto 12px;
+					color: #c8a359;
+					font-family: 'PalatinoLinotype-BoldItalic';
+					font-size: 18px;
+					line-height: 27px;
+					text-transform: uppercase;
+				}
+					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-third-title:before {
+
+						position: absolute;
+						content: "";
+						left: 0;
+						top: 50%;
+						margin-top: -1px;
+						width: 100px;
+						height: 2px;
+						background-color: #c8a359;
+					}
+					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-third-title:after {
+
+						position: absolute;
+						content: "";
+						right: 0;
+						top: 50%;
+						margin-top: -1px;
+						width: 100px;
+						height: 2px;
+						background-color: #c8a359;
+					}
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents p {
 					
 					margin: 0 auto;
@@ -546,6 +588,11 @@ a, a:hover {
 					font-family: 'PalatinoLinotype-Italic';
 					font-size: 20px;
 					line-height: 30px;
+				}
+				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents  .b-paged-article-section-contents-description {
+
+					max-width: 850px;
+					color: #8c8c8c;
 				}
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-link {
 
