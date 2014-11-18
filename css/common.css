@@ -542,14 +542,29 @@ a, a:hover {
 		text-align: right;
 		pointer-events: all;
 		overflow: hidden;
+		max-width: 300px;
 	}
 		.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause {
 
 			position: relative;
 			line-height: 40px;
-
-			
 		}
+			.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause:after {
+
+				position: absolute;
+				content: "";
+				top: 50%;
+				right: 0;
+				margin-top: -1px;
+				height: 2px;
+				width: 5px;
+				background-color: #c8a359;
+				-webkit-transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+				-moz-transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+				-o-transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+				transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+			}
+
 			.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-current-clause:after,
 			.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause:hover:after {
 				width: 20px;
@@ -558,34 +573,24 @@ a, a:hover {
 			.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link {
 
 				position: relative;
-				display: block;
 				/*right: -200px;*/
-				padding: 0 30px 0 0;
+				opacity: 0 30px 0 0;
 				height: 100%;
 				font-family: 'PalatinoLinotype-Roman' ,sans-serif;
 				text-decoration: none;
 				text-transform: uppercase;
 				color: #c8a359;
+				white-space: nowrap;
+				opacity: 0;
+				text-indent: 100%;
+				text-align: left;
+				display: inline-block;
 			}
-				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link:hover {
-					
-					right: 0;
-				}
-				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link:after {
+			.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link:hover {
 
-					position: absolute;
-					content: "";
-					top: 50%;
-					right: 0;
-					margin-top: -1px;
-					height: 2px;
-					width: 5px;
-					background-color: #c8a359;
-					-webkit-transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
-					-moz-transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
-					-o-transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
-					transition: width 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
-				}
+				text-indent: 0;
+				opacity: 1;
+			}
 				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-current-clause .b-paged-article-pagination-collection-clause-link:after,
 				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link:hover:after {
 
