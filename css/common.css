@@ -463,6 +463,7 @@ a, a:hover {
 	-ms-transition: .3s;
 	transition: .3s;
 }
+
 	.b-contacts-collection .b-contacts-clause {
 
 		display: inline-block;
@@ -473,14 +474,19 @@ a, a:hover {
 		text-transform: uppercase;
 		color: #f8f6f2;
 	}
+
 		.b-contacts-collection .b-contacts-clause .b-contacts-clause-link {
 
 			text-decoration: none;
 			color: #f8f6f2;
+			border-bottom: 1px solid transparent;
 		}
+
 			.b-contacts-collection .b-contacts-clause .b-contacts-clause-link:hover {
-				text-decoration: underline;
+
+				border-bottom-color: #ddd;
 			}
+
 .l-content {
 
 	display: inline-block;
@@ -517,6 +523,7 @@ a, a:hover {
 		left: 0;
 		bottom: 0;
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
 		.b-paged-article .b-paged-article-section .b-paged-article-backgrounds-rightcolumn-section {
 
