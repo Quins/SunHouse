@@ -391,9 +391,8 @@ a, a:hover {
 
 		position: absolute;
 		display: block;
-		bottom: 50%;
+		bottom: 230px;
 		left: 50%;
-		margin-bottom: -150px;
 		margin-left: -30px;
 		width: 61px;
 		height: 61px;
@@ -468,7 +467,7 @@ a, a:hover {
 
 		display: inline-block;
 		padding: 0 10px 0 0;
-		font-family: 'ProximaNovaCond-Semibold';
+		font-family: 'ProximaNovaCond-Semibold', sans-serif;
 		font-size: 12px;
 		line-height: normal;
 		text-transform: uppercase;
@@ -556,7 +555,7 @@ a, a:hover {
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-right-section-contents .b-paged-article-second-title {
 
 					color: #c8a359;
-					font-family: 'SignPainter-HouseScript';
+					font-family: 'SignPainter-HouseScript', sans-serif;
 					font-size: 44px;
 					line-height: normal;
 				}
@@ -577,7 +576,7 @@ a, a:hover {
 
 					max-width: 700px;
 					color: #f8f6f2;
-					font-family: 'SignPainter-HouseScript';
+					font-family: 'SignPainter-HouseScript', sans-serif;
 					font-size: 80px;
 					line-height: 80px;
 				}
@@ -587,7 +586,7 @@ a, a:hover {
 					position: relative;
 					margin: 0 0 55px;
 					color: #f8f6f2;
-					font-family: 'SignPainter-HouseScript';
+					font-family: 'SignPainter-HouseScript', sans-serif;
 					font-size: 62px;
 					line-height: normal;
 				}
@@ -635,7 +634,7 @@ a, a:hover {
 					position: relative;
 					margin: 0 auto 12px;
 					color: #c8a359;
-					font-family: 'PalatinoLinotype-BoldItalic';
+					font-family: 'PalatinoLinotype-BoldItalic', sans-serif;
 					font-size: 18px;
 					line-height: 27px;
 					text-transform: uppercase;
@@ -667,7 +666,7 @@ a, a:hover {
 					margin: 0 auto;
 					max-width: 600px;
 					color: #f8f6f2;
-					font-family: 'PalatinoLinotype-Italic';
+					font-family: 'PalatinoLinotype-Italic', sans-serif;
 					font-size: 20px;
 					line-height: 30px;
 				}
@@ -684,7 +683,7 @@ a, a:hover {
 
 					padding: 60px 3px 3px 3px;
 					display: inline-block;
-					font-family: 'PalatinoLinotype-Roman';
+					font-family: 'PalatinoLinotype-Roman', sans-serif;
 					font-size: 20px;
 					line-height: 30px;
 					color: #c8a359;
@@ -710,7 +709,7 @@ a, a:hover {
 			width: 100%;
 			min-height: 60px;
 			width: 235px;
-			font-family: 'PalatinoLinotype-Italic';
+			font-family: 'PalatinoLinotype-Italic', sans-serif;
 			font-size: 20px;
 			line-height: 30px;
 			color: #c8a359;
