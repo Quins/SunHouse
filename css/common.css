@@ -647,6 +647,7 @@ a, a:hover {
 			line-height: 1080px;
 			text-align: center;
 		}
+
 			.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents {
 
 				position: relative;
@@ -658,10 +659,12 @@ a, a:hover {
 				text-align: center;
 				z-index: 20;
 			}
+
 			.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-left-section-contents {
 
 				margin-right: 50%;
 			}
+
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-left-section-contents .b-paged-article-secondary-title,
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-right-section-contents .b-paged-article-secondary-title {
 
@@ -670,11 +673,13 @@ a, a:hover {
 					font-size: 44px;
 					line-height: normal;
 				}
+
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-left-section-contents .b-paged-article-section-contents-description,
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-right-section-contents .b-paged-article-section-contents-description {
 
 					max-width: 580px;
 				}
+
 			.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-right-section-contents {
 
 				margin-left: 50%;
@@ -692,35 +697,52 @@ a, a:hover {
 					line-height: 80px;
 				}
 
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-secondary-title {
+				.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-secondary-title {
 
 					position: relative;
-					margin: 0 0 55px;
+					padding: 40px 0 55px;
 					color: #f8f6f2;
 					font-family: 'SignPainter-HouseScript', sans-serif;
 					font-size: 62px;
 					line-height: normal;
 				}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-secondary-title:before {
+				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-secondary-title {
+
+					padding: 0 0 55px;
+					-webkit-transition: .6s;
+					-moz-transition: .6s;
+					-ms-transition: .6s;
+					transition: .6s;
+				}
+
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-secondary-title:before {
 
 						position: absolute;
 						content: "";
-						top: -25px;
+						top: 15px;
 						left: 50%;
 						margin-left: -150px;
 						height: 2px;
 						width: 300px;
 						background-color: #c8a359;
 					}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-hideupper-title:before {
+					.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-secondary-title:before {
+
+						opacity: 0;
+						-webkit-transition: .6s;
+						-moz-transition: .6s;
+						-ms-transition: .6s;
+						transition: .6s;
+					}
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-hideupper-title:before {
 
 						display: none;
 					}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-secondary-title:after {
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-secondary-title:after {
 
 						position: absolute;
 						content: "";
-						bottom: -25px;
+						bottom: 30px;
 						left: 50%;
 						margin-left: -150px;
 						height: 2px;
@@ -728,19 +750,19 @@ a, a:hover {
 						background-color: #c8a359;
 					}
 
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-section-contents-titles-section {
+				.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-section-contents-titles-section {
 
 					display: inline-block;
 					overflow: hidden;
 				}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-section-contents-titles-section .b-paged-article-second-title:after,
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-section-contents-titles-section .b-paged-article-second-title:before {
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-section-contents-titles-section .b-paged-article-second-title:after,
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-section-contents-titles-section .b-paged-article-second-title:before {
 
 						left: 0;
 						margin: 0;
 						width: 100%;
 					}
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-third-title {
+				.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-third-title {
 
 					position: relative;
 					margin: 0 auto 12px;
@@ -750,7 +772,7 @@ a, a:hover {
 					line-height: 27px;
 					text-transform: uppercase;
 				}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-third-title:before {
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-third-title:before {
 
 						position: absolute;
 						content: "";
@@ -761,7 +783,7 @@ a, a:hover {
 						height: 2px;
 						background-color: #c8a359;
 					}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-third-title:after {
+					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-third-title:after {
 
 						position: absolute;
 						content: "";
@@ -772,7 +794,7 @@ a, a:hover {
 						height: 2px;
 						background-color: #c8a359;
 					}
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents p {
+				.b-paged-article .b-paged-article-section .b-paged-article-section-contents p {
 					
 					margin: 0 auto;
 					max-width: 600px;
@@ -780,7 +802,18 @@ a, a:hover {
 					font-family: 'PalatinoLinotype-Italic', sans-serif;
 					font-size: 20px;
 					line-height: 30px;
+					overflow: hidden;
+					max-height: 0;
 				}
+				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents p {
+
+					max-height: 720px;
+					-webkit-transition: .6s;
+					-moz-transition: .6s;
+					-ms-transition: .6s;
+					transition: .6s;
+				}
+
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents  .b-paged-article-section-contents-description {
 
 					max-width: 850px;
@@ -790,17 +823,31 @@ a, a:hover {
 
 					display: none;
 				}
+
 				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-link {
 
-					padding: 60px 3px 3px 3px;
 					display: inline-block;
 					font-family: 'PalatinoLinotype-Roman', sans-serif;
 					font-size: 20px;
 					line-height: 30px;
 					color: #c8a359;
 					text-decoration: none;
-					border-bottom: 2px solid #c8a359;
+					border-bottom: 0px solid #c8a359;
+					padding: 0 3px;
+					overflow: hidden;
+					max-height: 0;
 				}
+				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-link {
+
+					padding: 60px 3px 3px 3px;
+					max-height: 720px;
+					border-bottom-width: 2px;
+					-webkit-transition: .6s;
+					-moz-transition: .6s;
+					-ms-transition: .6s;
+					transition: .6s;
+				}
+
 	.b-paged-article .b-paged-article-section .b-paged-article-section-form {
 
 		padding: 45px 0 70px 0;			
