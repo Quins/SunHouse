@@ -285,6 +285,32 @@ a, a:hover {
 	line-height: 0;
 	pointer-events: all;
 }
+
+	.b-primary-navigation-hide-shadow-section {
+		position: absolute;
+		content: "";
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+		opacity: 0;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-ms-transition: .5s;
+		transition: .5s;
+		pointer-events: none;
+		z-index: 11;
+	}
+		.b-primary-navigation-show-shadow-section {
+			opacity: 1;
+			-webkit-transition: .5s;
+			-moz-transition: .5s;
+			-ms-transition: .5s;
+			transition: .5s;
+			pointer-events: all;
+		}
+
 	.b-primary-navigation .b-primary-navigation-toggle-link:after {
 
 		position: absolute;
@@ -296,7 +322,7 @@ a, a:hover {
 		cursor: pointer;
 		background: url("../i/toggle.png") no-repeat 100% 0;
 		transition: .2s background-position linear;
-		z-index: 10;
+		z-index: 13;
 	}
 
 		.b-primary-navigation .b-primary-navigation-toggle-link:hover:after {
@@ -320,6 +346,7 @@ a, a:hover {
 		-moz-transition: .5s;
 		-ms-transition: .5s;
 		transition: .5s;
+		z-index: 14;
 	}
 	.b-primary-navigation .b-primary-opened-menu {
 		opacity: 1;
@@ -360,6 +387,7 @@ a, a:hover {
 
 				padding-left: 70px;
 				color: #c8a359;
+				font-family: 'PalatinoLinotype-Roman' ,sans-serif;
 				font-size: 21px;
 				line-height: 21px;
 				text-transform: uppercase;
