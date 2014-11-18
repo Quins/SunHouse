@@ -662,8 +662,8 @@ a, a:hover {
 
 				margin-right: 50%;
 			}
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-left-section-contents .b-paged-article-second-title,
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-right-section-contents .b-paged-article-second-title {
+				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-left-section-contents .b-paged-article-secondary-title,
+				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents.b-paged-article-right-section-contents .b-paged-article-secondary-title {
 
 					color: #c8a359;
 					font-family: 'SignPainter-HouseScript', sans-serif;
@@ -692,7 +692,7 @@ a, a:hover {
 					line-height: 80px;
 				}
 
-				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-second-title {
+				.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-secondary-title {
 
 					position: relative;
 					margin: 0 0 55px;
@@ -701,7 +701,7 @@ a, a:hover {
 					font-size: 62px;
 					line-height: normal;
 				}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-second-title:before {
+					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-secondary-title:before {
 
 						position: absolute;
 						content: "";
@@ -716,7 +716,7 @@ a, a:hover {
 
 						display: none;
 					}
-					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-second-title:after {
+					.b-paged-article .b-paged-article-section .b-paged-article-section-inside .b-paged-article-section-contents .b-paged-article-secondary-title:after {
 
 						position: absolute;
 						content: "";

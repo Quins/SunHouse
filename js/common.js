@@ -133,6 +133,7 @@ batchesProperties = {
 		forwardDirection: "bottom",
 		currentListClass: "b-paged-article-current-section",
 		progressTraversedClass: "b-progress-traversed-clause",
+		revealedListClass: "b-paged-article-revealed-section", 
 		minimumScreenWidth: 1000
 	}
 };
@@ -399,6 +400,20 @@ function gotoBatchList(batchID, list, forceGoTo) {
 
 	if (finalstep) step = finalstep;
 	if (stepcorrection) step += stepcorrection;
+
+	if (batches[batchID].properties.revealedListClass) {
+
+		if ($current.data("batch-list-delayed-reveal") == true) {
+
+			$current.addClass(batches[batchID].properties.revealedListClass);
+			$current.data("batch-list-delayed-reveal", false);
+			batches[batchID].batch.trigger("turned");
+			return false;
+		} else {
+
+			$current.addClass(batches[batchID].properties.revealedListClass);
+		}
+	}
 
 	batches[batchID].currentList = target;
 	recordBatchProgress(batchID);
