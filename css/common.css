@@ -301,28 +301,42 @@ a, a:hover {
 
 		.b-primary-navigation .b-primary-navigation-toggle-link:hover:after {
 
-				background-position: 0 0;
-			}
-.b-primary-navigation .b-primary-menu-collection {
-
-			position: absolute;
-			top: 150px;
-			margin: 0 0 0 60px;
-			padding-top: 3px;
-			width: 30%;
-			min-width: 365px;
-			list-style: none;
-			z-index: 10;
-			visibility: hidden	
+			background-position: 0 0;
 		}
-		.b-primary-navigation .b-primary-menu-collection .b-primary-menu-clause {
+
+	.b-primary-navigation .b-primary-menu {
+
+		position: absolute;
+		top: 150px;
+		margin: 0 0 0 60px;
+		width: 30%;
+		min-width: 365px;
+		list-style: none;
+		z-index: 10;
+		display: block;
+		opacity: 0;
+		pointer-events: none;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-ms-transition: .5s;
+		transition: .5s;
+	}
+	.b-primary-navigation .b-primary-opened-menu {
+		opacity: 1;
+		pointer-events: all;
+		-webkit-transition: .5s;
+		-moz-transition: .5s;
+		-ms-transition: .5s;
+		transition: .5s;
+	}
+		.b-primary-navigation .b-primary-menu .b-primary-menu-clause {
 
 			position: relative;
 			margin: 22px 0;
 			padding-bottom: 1px;
 			overflow: hidden;
 		}
-			.b-primary-navigation .b-primary-menu-collection .b-primary-menu-clause:before {
+			.b-primary-navigation .b-primary-menu .b-primary-menu-clause:before {
 
 				position: absolute;
 				content: "";
@@ -337,12 +351,12 @@ a, a:hover {
 				-o-transition: width 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
 				transition: width 250ms cubic-bezier(0.645, 0.045, 0.355, 1);
 			}
-			.b-primary-navigation .b-primary-menu-collection .b-primary-menu-clause:hover:before,
-			.b-primary-navigation .b-primary-menu-collection .b-primary-menu-current-clause:before {
+			.b-primary-navigation .b-primary-menu .b-primary-menu-clause:hover:before,
+			.b-primary-navigation .b-primary-menu .b-primary-menu-current-clause:before {
 
 				width: 31px;
 			}	
-			.b-primary-navigation .b-primary-menu-collection .b-primary-menu-clause .b-primary-menu-clause-link {
+			.b-primary-navigation .b-primary-menu .b-primary-menu-clause .b-primary-menu-clause-link {
 
 				padding-left: 70px;
 				color: #c8a359;
