@@ -512,19 +512,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 	.b-paged-article .b-paged-article-section .b-paged-article-section-partners-collection {
 
-		max-width: 900px;
+		width: 900px;
 		font-size: 0;
 		line-height: 0;
 	}
 		.b-paged-article .b-paged-article-section .b-paged-article-section-partners-collection .b-paged-article-section-partners-clause {
 
 			display: inline-block;
-			margin: 10px 25px;
+			margin: 10px 23px;
 			width: 400px;
 			line-height: 100px;
-			vertical-align: middle;	
 			border: 1px solid #fff;
-
 		}
+		.b-paged-article .b-paged-article-section .b-paged-article-section-partners-collection .b-paged-article-section-partners-clause .b-paged-article-section-partners-picture {
 
+			display: inline-block;
+			vertical-align: middle;
+		}
 
