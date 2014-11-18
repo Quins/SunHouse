@@ -140,6 +140,18 @@ batchesProperties = {
 batchesActions = {
 
 	"main": {
+
+		first: {
+
+			onShow: function() {
+				$(".b-primary-navigation-proceed-link").removeClass("b-primary-navigation-proceed-invisible-link");
+				$(".b-contacts-collection").removeClass("b-contacts-invisible-collection");
+			}, 
+			onHide: function() {
+				$(".b-primary-navigation-proceed-link").addClass("b-primary-navigation-proceed-invisible-link");
+				$(".b-contacts-collection").addClass("b-contacts-invisible-collection");
+			}
+		}
 	},
 	"prices": {
 
