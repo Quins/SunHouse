@@ -132,7 +132,8 @@ batchesProperties = {
 
 		forwardDirection: "bottom",
 		currentListClass: "b-paged-article-current-section",
-		progressTraversedClass: "b-progress-traversed-clause",
+		progressTraversedClass: "b-paged-article-pagination-collection-traversed-clause",
+		progressCurrentClass: "b-paged-article-pagination-collection-current-clause",
 		revealedListClass: "b-paged-article-revealed-section", 
 		minimumScreenWidth: 1000
 	}
@@ -336,6 +337,20 @@ function flipBatchList(batchID, event) {
 		direction = "backward";
 	}
 
+	if (batches[batchID].properties.revealedListClass && direction == "forward") {
+
+		if ($current.data("batch-list-delayed-reveal") == true) {
+
+			$current.addClass(batches[batchID].properties.revealedListClass);
+			$current.data("batch-list-delayed-reveal", false);
+			batches[batchID].batch.trigger("turned");
+			return false;
+		} else {
+
+			$current.addClass(batches[batchID].properties.revealedListClass);
+		}
+	}
+
 	if (direction == "forward" && $next !== null) {
 		gotoBatchList(batchID, next);
 	} else if (direction == "backward" && $prev !== null) {
@@ -400,20 +415,6 @@ function gotoBatchList(batchID, list, forceGoTo) {
 
 	if (finalstep) step = finalstep;
 	if (stepcorrection) step += stepcorrection;
-
-	if (batches[batchID].properties.revealedListClass) {
-
-		if ($current.data("batch-list-delayed-reveal") == true) {
-
-			$current.addClass(batches[batchID].properties.revealedListClass);
-			$current.data("batch-list-delayed-reveal", false);
-			batches[batchID].batch.trigger("turned");
-			return false;
-		} else {
-
-			$current.addClass(batches[batchID].properties.revealedListClass);
-		}
-	}
 
 	batches[batchID].currentList = target;
 	recordBatchProgress(batchID);

@@ -590,14 +590,14 @@ a, a:hover {
 				text-indent: 0;
 				opacity: 1;
 			}
-				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-current-clause .b-paged-article-pagination-collection-clause-link:after,
-				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link:hover:after {
-
-					width: 20px;
-				}
-				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-traverst-link:after {
+				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-traversed-clause:after {
 
 					width: 10px;
+				}
+				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-current-clause:after,
+				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause:hover:after {
+
+					width: 20px;
 				}
 				.b-paged-article .b-paged-article-pagination-collection .b-paged-article-pagination-collection-clause .b-paged-article-pagination-collection-clause-link span {
 
