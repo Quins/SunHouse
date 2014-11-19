@@ -873,8 +873,9 @@ a, a:hover {
 				max-width: 580px;
 			}
 	.b-paged-article .b-paged-article-section .b-paged-article-section-form {
-
-		padding: 45px 0 70px 0;
+		
+		max-height: 0;
+		padding: 0;
 		opacity: 0;
 		-webkit-transition: .6s;
 		-moz-transition: .6s;
@@ -882,6 +883,8 @@ a, a:hover {
 		transition: .6s;		
 	}
 	.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-form {
+		max-height: 720px;
+		padding: 45px 0 70px 0;
 		opacity: 1;
 		-webkit-transition: .6s;
 		-moz-transition: .6s;
