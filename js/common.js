@@ -10,6 +10,19 @@ $(document).ready(function() {
 			toggleOnOutsideClick: true
 		}
 	});
+
+	$("[data-force-batch-scroll]").click( function(e) {
+
+		e.preventDefault();
+		var scroll = $.Event("mousewheel");
+		var direction = -1;
+		if ($(this).data("force-batch-scroll-direction") !== undefined)
+			direction = ($(this).data("force-batch-scroll-direction") == "backward" ? 1 : -1);
+		if (scroll.originalEvent === undefined) 
+			scroll.originalEvent = {};
+		scroll.originalEvent.wheelDeltaY = direction;
+		$("[data-batch]").trigger(scroll);
+	});
 });
 
 /* Toggles */
@@ -135,6 +148,7 @@ batchesProperties = {
 		progressTraversedClass: "b-paged-article-pagination-collection-traversed-clause",
 		progressCurrentClass: "b-paged-article-pagination-collection-current-clause",
 		revealedListClass: "b-paged-article-revealed-section", 
+		resizeRebuild: false, 
 		minimumScreenWidth: 1000
 	}
 };
@@ -230,26 +244,29 @@ function initializeBatches() {
 			});
 		});
 
-		var batchTimeout;
-		var batchCover = false;
-		$(window).resize( function( event ) {
+		if (batches[batchID].properties.resizeRebuild) {
 
-			if (batchTimeout) clearTimeout(batchTimeout);
-			if (!batchCover) {
+			var batchTimeout;
+			var batchCover = false;
+			$(window).resize( function( event ) {
 
-				batchCover = $('<div />', {
-					class: "b-general-batch-cover"
-				});
-				batches[batchID].batch.prepend(batchCover);
-			}
+				if (batchTimeout) clearTimeout(batchTimeout);
+				if (!batchCover) {
 
-			batchTimeout = setTimeout( function() {
+					batchCover = $('<div />', {
+						class: "b-general-batch-cover"
+					});
+					batches[batchID].batch.prepend(batchCover);
+				}
 
-				setupBatchFlow(batchID);
-				batchCover.detach();
-				batchCover = false;
-			}, 1000);
-		});
+				batchTimeout = setTimeout( function() {
+
+					setupBatchFlow(batchID);
+					batchCover.detach();
+					batchCover = false;
+				}, 1000);
+			});
+		}
 
 	});
 
@@ -339,15 +356,14 @@ function flipBatchList(batchID, event) {
 
 	if (batches[batchID].properties.revealedListClass && direction == "forward") {
 
+		$current.addClass(batches[batchID].properties.revealedListClass);
+		if ($current.data("batch-list-delayed-reveal-additional-class") !== undefined)
+			$current.addClass($current.data("batch-list-delayed-reveal-additional-class"));
 		if ($current.data("batch-list-delayed-reveal") == true) {
 
-			$current.addClass(batches[batchID].properties.revealedListClass);
 			$current.data("batch-list-delayed-reveal", false);
 			batches[batchID].batch.trigger("turned");
 			return false;
-		} else {
-
-			$current.addClass(batches[batchID].properties.revealedListClass);
 		}
 	}
 

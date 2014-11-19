@@ -724,10 +724,11 @@ a, a:hover {
 					.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-secondary-title:before {
 
 						opacity: 0;
-						-webkit-transition: .6s;
-						-moz-transition: .6s;
-						-ms-transition: .6s;
-						transition: .6s;
+						height: 0px;
+						-webkit-transition: .3s;
+						-moz-transition: .3s;
+						-ms-transition: .3s;
+						transition: .3s;
 					}
 					.b-paged-article  .b-paged-article-whitened-section .b-paged-article-section-contents .b-paged-article-secondary-title {
 
@@ -823,7 +824,6 @@ a, a:hover {
 
 				.b-paged-article .b-paged-article-whitened-section .b-paged-article-section-contents p {
 
-					max-width: 850px;
 					color: #8c8c8c;
 				}
 
