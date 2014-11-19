@@ -643,6 +643,10 @@ a, a:hover {
 			bottom: 0;
 			background: rgba(59, 49, 29, .35);
 		}
+		.b-paged-article .b-paged-article-whitened-section .b-paged-article-backgrounds-section:before {
+
+			display: none;
+		}
 	.b-paged-article  .b-paged-article-unbackground-section .b-paged-article-backgrounds-section {
 
 		background: none !important;
