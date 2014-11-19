@@ -438,6 +438,18 @@ a, a:hover {
 		-moz-transition-delay: .5s;
 		-ms-transition-delay: .5s;
 		transition-delay: .5s;
+		-webkit-animation-name: arrowShake;
+		-webkit-animation-duration: 1.5s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-mos-animation-name: arrowShake;
+		-mos-animation-duration: 1.5s;
+		-mos-animation-iteration-count: infinite;
+		-mos-animation-timing-function: linear;
+		animation-name: arrowShake;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 	}
 	.b-primary-navigation .b-primary-navigation-proceed-invisible-link {
 		opacity: 0;
@@ -458,6 +470,30 @@ a, a:hover {
 			width: 20px;
 			height: 30px;
 			background: url('../i/procees-arrow.png') no-repeat;
+		}
+		@-webkit-keyframes arrowShake {
+
+			0%   { bottom: 230px }
+			25%  { bottom: 234px }
+			50%  { bottom: 230px }
+			75%  { bottom: 228px }
+			100% { bottom: 230px }
+		}
+		@-mos-keyframes arrowShake {
+
+			0%   { bottom: 230px }
+			25%  { bottom: 234px }
+			50%  { bottom: 230px }
+			75%  { bottom: 228px }
+			100% { bottom: 230px }
+		}
+		@keyframes arrowShake {
+
+			0%   { bottom: 230px }
+			25%  { bottom: 234px }
+			50%  { bottom: 230px }
+			75%  { bottom: 228px }
+			100% { bottom: 230px }
 		}
 
 .b-contacts-collection {
