@@ -468,7 +468,14 @@ function gotoBatchList(batchID, list, forceGoTo) {
 
 			batches[batchID].allItems.eq(i).animate({
 				top: (position - step) + "%"
-			}, duration);
+			}, duration, function() {
+
+				if (batches[batchID].properties.currentListClass) {
+
+					$current.removeClass(batches[batchID].properties.currentListClass);
+					$target.addClass(batches[batchID].properties.currentListClass);
+				}
+			});
 		} else {
 
 			var position = Math.round(100 * parseInt(batches[batchID].allItems.eq(i).css("top")) / batches[batchID].batch.height());
