@@ -170,16 +170,25 @@ a, a:hover {
 		position: absolute;
 		display: block;
 		background: #c8a359;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-fill-mode: forwards;
 	}
 
-	.b-borders-collection .b-borders-collection-clause.b-borders-collection-upperleft-clause {
+	.b-borders-collection .b-borders-collection-upperleft-clause {
 
 			left: 0;
-			right: 50%;
 			margin: 0 38px 0 0;
 			height: 7px;
+			-webkit-animation-name: border-topLeft;
+			-webkit-animation-delay: 8s;
 		}
-			.b-borders-collection .b-borders-collection-clause.b-borders-collection-upperleft-clause:after {
+			@-webkit-keyframes border-topLeft {
+				0% { right: 100%; }
+				100% { right: 50%; }
+			}
+
+			.b-borders-collection .b-borders-collection-upperleft-clause:after {
 
 				position: absolute;
 				content: "";
@@ -190,15 +199,25 @@ a, a:hover {
 				background-image: url('../i/couple-triangle.png');
 				background-repeat: no-repeat;
 				background-position: 0 0;
+				opacity: 0;
+				-webkit-animation-name: border-topLeft-triangle;
+				-webkit-animation-delay: 10s;
+				-webkit-animation-duration: .1s;
+				-webkit-animation-fill-mode: forwards;
 			}	
-	.b-borders-collection .b-borders-collection-clause.b-borders-collection-upperright-clause  {
+				@-webkit-keyframes border-topLeft-triangle {
+					from {opacity: 0; }
+					to { opacity: 1; }
+				}
+	.b-borders-collection .b-borders-collection-upperright-clause  {
 
 		right: 0;
 		left: 50%;
 		margin: 0 0 0 38px;
 		height: 7px;
+		-webkit-animation-name: border-topRight;
 	}
-		.b-borders-collection .b-borders-collection-clause.b-borders-collection-upperright-clause:after {
+		.b-borders-collection .b-borders-collection-upperright-clause:after {
 
 			position: absolute;
 			content: "";
@@ -210,28 +229,50 @@ a, a:hover {
 			background-repeat: no-repeat;
 			background-position: 100% 0;
 		}
+		@-webkit-keyframes border-topRight {
+			0% { right: 50%; }
+		    5% { opacity: 1; }
+			100% { right: 0; }
+		}
 
-	.b-borders-collection .b-borders-collection-clause.b-borders-collection-right-clause {
+	.b-borders-collection .b-borders-collection-right-clause {
 
 		width: 7px;
 		top: 0;
 		right: 0;
-		bottom: 0;
+		-webkit-animation-name: borderRight;
+		-webkit-animation-delay: 2s;
 	}
-	.b-borders-collection .b-borders-collection-clause.b-borders-collection-left-clause {
 
-		width: 7px;
-		top: 0;
-		left: 0;
-		bottom: 0;
-	}
-	.b-borders-collection .b-borders-collection-clause.b-borders-collection-bottom-clause {
+		@-webkit-keyframes borderRight {
+			0% { bottom: 100%; }
+			100% { bottom: 0; }
+		}
+	.b-borders-collection .b-borders-collection-bottom-clause {
 
 		height: 7px;
 		right: 0;
+		bottom: 0;
+		-webkit-animation-name: borderBottom;
+		-webkit-animation-delay: 4s;
+	}
+		@-webkit-keyframes borderBottom {
+			0% { left: 100%; }
+			100% { left: 0; }
+		}
+	.b-borders-collection .b-borders-collection-left-clause {
+
+		width: 7px;
 		left: 0;
 		bottom: 0;
+		-webkit-animation-name: borderLeft;
+		-webkit-animation-delay: 6s;
 	}
+		@-webkit-keyframes borderLeft {
+			0% { top: 100%; }
+			100% { top: 0; }
+		}
+
 
 .b-logo {
 
