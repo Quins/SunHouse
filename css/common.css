@@ -100,10 +100,10 @@ button::-moz-focus-inner {
 
 a, a:hover {
 
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-	transition: .3s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
 }
 
 
@@ -430,34 +430,34 @@ a, a:hover {
 		z-index: 10;
 		opacity: 1;
 		pointer-events: all;
-		-webkit-transition: .3s;
-		-moz-transition: .3s;
-		-ms-transition: .3s;
-		transition: .3s;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		transition: 1s;
 		-webkit-transition-delay: .5s;
 		-moz-transition-delay: .5s;
 		-ms-transition-delay: .5s;
 		transition-delay: .5s;
 		-webkit-animation-name: arrowShake;
-		-webkit-animation-duration: 1.5s;
+		-webkit-animation-duration: 1.2s;
 		-webkit-animation-iteration-count: infinite;
 		-webkit-animation-timing-function: linear;
 		-mos-animation-name: arrowShake;
-		-mos-animation-duration: 1.5s;
+		-mos-animation-duration: 1.2s;
 		-mos-animation-iteration-count: infinite;
 		-mos-animation-timing-function: linear;
 		animation-name: arrowShake;
-		animation-duration: 1.5s;
+		animation-duration: 1.2s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 	}
 	.b-primary-navigation .b-primary-navigation-proceed-invisible-link {
 		opacity: 0;
 		pointer-events: none;
-		-webkit-transition: .3s;
-		-moz-transition: .3s;
-		-ms-transition: .3s;
-		transition: .3s;
+		-webkit-transition: 1s;
+		-moz-transition: 1s;
+		-ms-transition: 1s;
+		transition: 1s;
 	}
 		.b-primary-navigation .b-primary-navigation-proceed-link:before {
 
@@ -509,10 +509,10 @@ a, a:hover {
 	pointer-events: all;
 	opacity: 1;
 	pointer-events: all;
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-	transition: .3s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
 	-webkit-transition-delay: .5s;
 	-moz-transition-delay: .5s;
 	-ms-transition-delay: .5s;
@@ -522,10 +522,10 @@ a, a:hover {
 
 	opacity: 0;
 	pointer-events: none;
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-	transition: .3s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
 }
 
 	.b-contacts-collection .b-contacts-clause {
@@ -740,10 +740,10 @@ a, a:hover {
 				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-secondary-title {
 
 					padding: 0 0 55px;
-					-webkit-transition: .6s;
-					-moz-transition: .6s;
-					-ms-transition: .6s;
-					transition: .6s;
+					-webkit-transition: 1.2s;
+					-moz-transition: 1.2s;
+					-ms-transition: 1.2s;
+					transition: 1.2s;
 				}
 
 					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-secondary-title:before {
@@ -761,10 +761,10 @@ a, a:hover {
 
 						opacity: 0;
 						height: 0px;
-						-webkit-transition: .3s;
-						-moz-transition: .3s;
-						-ms-transition: .3s;
-						transition: .3s;
+						-webkit-transition: 1s;
+						-moz-transition: 1s;
+						-ms-transition: 1s;
+						transition: 1s;
 					}
 					.b-paged-article  .b-paged-article-whitened-section .b-paged-article-section-contents .b-paged-article-secondary-title {
 
@@ -811,10 +811,10 @@ a, a:hover {
 				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-tertiary-title {
 
 					margin: 0 auto 12px;
-					-webkit-transition: .6s;
-					-moz-transition: .6s;
-					-ms-transition: .6s;
-					transition: .6s;
+					-webkit-transition: 1.2s;
+					-moz-transition: 1.2s;
+					-ms-transition: 1.2s;
+					transition: 1.2s;
 				}
 					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-tertiary-title:before {
 
@@ -852,10 +852,10 @@ a, a:hover {
 				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents p {
 
 					max-height: 720px;
-					-webkit-transition: .6s;
-					-moz-transition: .6s;
-					-ms-transition: .6s;
-					transition: .6s;
+					-webkit-transition: 1.2s;
+					-moz-transition: 1.2s;
+					-ms-transition: 1.2s;
+					transition: 1.2s;
 				}
 
 				.b-paged-article .b-paged-article-whitened-section .b-paged-article-section-contents p {
@@ -881,18 +881,20 @@ a, a:hover {
 					padding: 60px 3px 3px 3px;
 					max-height: 720px;
 					border-bottom-width: 2px;
-					-webkit-transition: .6s;
-					-moz-transition: .6s;
-					-ms-transition: .6s;
-					transition: .6s;
+					-webkit-transition: 1.2s;
+					-moz-transition: 1.2s;
+					-ms-transition: 1.2s;
+					transition: 1.2s;
 				}
 		.b-paged-article .b-paged-article-section .b-paged-article-right-section-contents {
 
 			margin-left: 50%;
+			padding: 0 30px 0 0;
 		}
 		.b-paged-article .b-paged-article-section .b-paged-article-left-section-contents {
 
 			margin-right: 50%;
+			padding: 0 0 0 30px;
 		}
 			.b-paged-article .b-paged-article-section .b-paged-article-left-section-contents .b-paged-article-secondary-title,
 			.b-paged-article .b-paged-article-section .b-paged-article-right-section-contents .b-paged-article-secondary-title {
@@ -906,26 +908,27 @@ a, a:hover {
 			.b-paged-article .b-paged-article-section .b-paged-article-left-section-contents p,
 			.b-paged-article .b-paged-article-section .b-paged-article-right-section-contents p {
 
-				max-width: 580px;
+				
+				max-width: 460px;
 			}
 	.b-paged-article .b-paged-article-section .b-paged-article-section-form {
 		
 		max-height: 0;
 		padding: 0;
 		opacity: 0;
-		-webkit-transition: .6s;
-		-moz-transition: .6s;
-		-ms-transition: .6s;
-		transition: .6s;		
+		-webkit-transition: 1.2s;
+		-moz-transition: 1.2s;
+		-ms-transition: 1.2s;
+		transition: 1.2s;		
 	}
 	.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-form {
 		max-height: 720px;
 		padding: 45px 0 70px 0;
 		opacity: 1;
-		-webkit-transition: .6s;
-		-moz-transition: .6s;
-		-ms-transition: .6s;
-		transition: .6s;		
+		-webkit-transition: 1.2s;
+		-moz-transition: 1.2s;
+		-ms-transition: 1.2s;
+		transition: 1.2s;		
 	}
 
 	.b-paged-article .b-paged-article-section .b-paged-article-section-form  .b-paged-article-section-form-field {
@@ -990,10 +993,10 @@ a, a:hover {
 
 			max-height: 720px;
 			opacity: 1;
-			-webkit-transition: .6s;
-			-moz-transition: .6s;
-			-ms-transition: .6s;
-			transition: .6s;
+			-webkit-transition: 1.2s;
+			-moz-transition: 1.2s;
+			-ms-transition: 1.2s;
+			transition: 1.2s;
 		}
 
 
