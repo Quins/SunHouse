@@ -321,6 +321,9 @@ a, a:hover {
 		height: 28px;
 		cursor: pointer;
 		background: url("../i/toggle.png") no-repeat 100% 0;
+		-webkit-transition: .2s background-position linear;
+		-mos-transition: .2s background-position linear;
+		-o-transition: .2s background-position linear;
 		transition: .2s background-position linear;
 		z-index: 13;
 	}
@@ -690,10 +693,28 @@ a, a:hover {
 		.b-paged-article .b-paged-article-section .b-paged-article-backgrounds-rightcolumn-section {
 
 			left: 50%;
+			-webkit-transform: translateX(20px);
+			-mos-transform: translateX(20px);
+			-o-transform: translateX(20px);
+			transform: translateX(20px);
+			opacity: 0;
+			-webkit-transition: 1s linear;
+			-mos-transition: 1s linear;
+			-o-transition: 1s linear;
+			transition: 1s linear;
 		}
 		.b-paged-article .b-paged-article-section .b-paged-article-backgrounds-leftcolumn-section {
 
 			right: 50%;
+			webkit-transform: translateX(-20px);
+			-mos-transform: translateX(-20px);
+			-o-transform: translateX(-20px);
+			transform: translateX(-20px);
+			opacity: 0;
+			-webkit-transition: 1s linear;
+			-mos-transition: 1s linear;
+			-o-transition: 1s linear;
+			transition: 1s linear;
 		}
 		.b-paged-article .b-paged-article-section .b-paged-article-section-inside{
 
@@ -704,6 +725,18 @@ a, a:hover {
 			font-size: 0;
 			line-height: 1080px;
 			text-align: center;
+		}
+		.b-paged-article .b-paged-article-current-section .b-paged-article-backgrounds-rightcolumn-section,
+		.b-paged-article .b-paged-article-revealed-section .b-paged-article-backgrounds-rightcolumn-section,
+		.b-paged-article .b-paged-article-current-section .b-paged-article-backgrounds-leftcolumn-section,
+		.b-paged-article .b-paged-article-revealed-section .b-paged-article-backgrounds-leftcolumn-section {
+
+			transform: translateX(0);
+			opacity: 1;
+			-webkit-transition: .5s linear;
+			-mos-transition: .5s linear;
+			-o-transition: .5s linear;
+			transition: .5s linear;
 		}
 
 			.b-paged-article .b-paged-article-section .b-paged-article-section-contents {
@@ -865,6 +898,7 @@ a, a:hover {
 
 				.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-link {
 
+					position: relative;
 					display: inline-block;
 					font-family: 'PalatinoLinotype-Roman', sans-serif;
 					font-size: 20px;
@@ -886,6 +920,30 @@ a, a:hover {
 					-ms-transition: 1.2s;
 					transition: 1.2s;
 				}
+					.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-link:after {
+					
+						position: absolute;
+						content: "";
+						bottom: 10px;
+						left: 0;
+						right: 0;
+						height: 2px;
+						background-color: #c8a359;
+						opacity: 0;
+						-webkit-transition: linear .3s;
+						-moz-transition: linear .3s;
+						-ms-transition: linear .3s;
+						transition: linear .3s;
+					}
+						.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-link:hover:after {
+
+							bottom: 36px;
+							opacity: 1;
+							-webkit-transition: linear .3s;
+							-moz-transition: linear .3s;
+							-ms-transition: linear .3s;
+							transition: linear .3s;
+						}
 		.b-paged-article .b-paged-article-section .b-paged-article-right-section-contents {
 
 			margin-left: 50%;
