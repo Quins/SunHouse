@@ -740,10 +740,10 @@ a, a:hover {
 				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-secondary-title {
 
 					padding: 0 0 55px;
-					-webkit-transition: 1.2s;
-					-moz-transition: 1.2s;
-					-ms-transition: 1.2s;
-					transition: 1.2s;
+					-webkit-transition: linear 1.2s;
+					-moz-transition: linear 1.2s;
+					-ms-transition: linear 1.2s;
+					transition: linear 1.2s;
 				}
 
 					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-secondary-title:before {
@@ -811,10 +811,10 @@ a, a:hover {
 				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents .b-paged-article-tertiary-title {
 
 					margin: 0 auto 12px;
-					-webkit-transition: 1.2s;
-					-moz-transition: 1.2s;
-					-ms-transition: 1.2s;
-					transition: 1.2s;
+					-webkit-transition: linear 1.2s;
+					-moz-transition: linear 1.2s;
+					-ms-transition: linear 1.2s;
+					transition: linear 1.2s;
 				}
 					.b-paged-article .b-paged-article-section .b-paged-article-section-contents .b-paged-article-tertiary-title:before {
 
@@ -851,7 +851,7 @@ a, a:hover {
 				}
 				.b-paged-article .b-paged-article-revealed-section .b-paged-article-section-contents p {
 
-					max-height: 720px;
+					max-height: 240px;
 					-webkit-transition: 1.2s;
 					-moz-transition: 1.2s;
 					-ms-transition: 1.2s;
