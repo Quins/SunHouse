@@ -14,6 +14,10 @@ $(document).ready(function() {
 		"main-menu": {
 
 			toggleOnOutsideClick: true
+		}, 
+		"order": {
+
+			toggleOnOutsideClick: true
 		}
 	});
 
@@ -207,12 +211,34 @@ batchesProperties = {
 		revealedListClass: "b-paged-article-revealed-section", 
 		resizeRebuild: false, 
 		minimumScreenWidth: 0
+	}, 
+	"landing": {
+
+		forwardDirection: "bottom",
+		currentListClass: "b-paged-article-current-section",
+		progressTraversedClass: "b-paged-article-pagination-collection-traversed-clause",
+		progressCurrentClass: "b-paged-article-pagination-collection-current-clause",
+		revealedListClass: "b-paged-article-revealed-section", 
+		resizeRebuild: false, 
+		minimumScreenWidth: 0
 	}
 };
 
 batchesActions = {
 
 	"main": {
+
+		last: {
+
+			onShow: function() {
+				$(".b-paged-article").addClass("b-paged-finished-article");
+			}, 
+			onHide: function() {
+				$(".b-paged-article").removeClass("b-paged-finished-article");
+			}
+		}
+	},
+	"landing": {
 
 		first: {
 

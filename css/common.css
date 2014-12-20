@@ -457,10 +457,14 @@ a, a:hover {
 	.b-primary-navigation .b-order-aside {
 
 		position: absolute;
-		top: 150px;
-		left: 25%;
-		right: 25%;
+		top: 50%;
+		left: 50%;
 		display: block;
+		width: 700px;
+		height: 480px;
+		font-size: 0;
+		line-height: 480px;
+		margin: -240px 0 0 -350px;
 		opacity: 0;
 		text-align: center;
 		pointer-events: none;
@@ -478,6 +482,12 @@ a, a:hover {
 		-ms-transition: .5s;
 		transition: .5s;
 	}
+
+		.b-primary-navigation .b-order-aside-inside {
+
+			display: inline-block;
+			vertical-align: middle;
+		}
 
 		.b-primary-navigation .b-order-aside .b-order-aside-call-section {
 
@@ -524,7 +534,7 @@ a, a:hover {
 		height: 26px;
 		font-size: 0;
 		line-height: 0;
-		z-index: 10;
+		z-index: 12;
 	}
 		.b-primary-navigation .b-primary-navigation-reservation-link:after {
 
