@@ -219,21 +219,10 @@ batchesActions = {
 			onShow: function() {
 				$(".b-primary-navigation-proceed-link").removeClass("b-primary-navigation-proceed-invisible-link");
 				$(".b-contacts-collection").removeClass("b-contacts-invisible-collection");
-				$(".b-logo").removeClass("b-extended-logo");
 			}, 
 			onHide: function() {
 				$(".b-primary-navigation-proceed-link").addClass("b-primary-navigation-proceed-invisible-link");
 				$(".b-contacts-collection").addClass("b-contacts-invisible-collection");
-				$(".b-logo").addClass("b-extended-logo");
-			}
-		}, 
-		last: {
-
-			onShow: function() {
-				$(".b-paged-article").addClass("b-paged-finished-article");
-			}, 
-			onHide: function() {
-				$(".b-paged-article").removeClass("b-paged-finished-article");
 			}
 		}
 	},
@@ -450,7 +439,7 @@ function flipBatchList(batchID, event) {
 			$current.data("batch-list-delayed-reveal", false);
 			setTimeout( function() {
 				batches[batchID].batch.trigger("turned");
-			}, 1000 );
+			}, 1500 );
 			return false;
 		}
 	}
@@ -538,7 +527,7 @@ function gotoBatchList(batchID, list, forceGoTo) {
 			if (j == 0 && batchesActions[descriptor].first && batchesActions[descriptor].first.onHide) {
 				batchesActions[descriptor].first.onHide();
 			} else if (j == batches[batchID].length - 1 && batchesActions[descriptor].last && batchesActions[descriptor].last.onHide) {
-				batchesActions[descriptor].last.onHide();
+				batchesActions[descriptor].first.onHide();
 			} else if (batchesActions[descriptor][j] && batchesActions[descriptor][j].onHide) {
 				batchesActions[descriptor][j].onHide();
 			}
